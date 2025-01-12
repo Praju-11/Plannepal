@@ -1,0 +1,21 @@
+li{
+    list-style-type: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.custom-btn{
+    background-color: $secondary-color;
+    padding: 10px 20px;
+    color: white;
+    display: inline-block;
+    border: none;
+    width: fit-content;
+    &:hover{
+        background-color: $primary-color;
+    }
+}
+.section-title{
+    color: $primary-color;
+}

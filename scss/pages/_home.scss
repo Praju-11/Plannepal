@@ -1,0 +1,212 @@
+.banner-section {
+    display: grid;
+    grid-template-columns: 1fr 50% 1fr;
+    gap: 30px;
+    margin-top: 40px;
+
+    ul {
+        grid-row: span 2;
+        padding: 50px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        list-style-type: disc;
+    }
+
+    .slider {
+        grid-row: span 2;
+        background-image: url("/Images/banner-1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 5px;
+        padding: 100px 50px;
+        color: white;
+        letter-spacing: 1px;
+
+        .slider-items {
+            span {
+                text-transform: uppercase;
+                position: relative;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                &::before {
+                    content: "";
+                    height: 2px;
+                    width: 60px;
+                    background-color: white;
+                }
+            }
+
+            .banner-heading {
+                font-size: 36px;
+                text-transform: uppercase;
+                margin-top: 10px;
+                font-weight: 600;
+            }
+
+            a {
+                background-color: $secondary-color;
+                padding: 10px 30px;
+                text-transform: uppercase;
+                color: black;
+                display: inline-block;
+                margin-top: 20px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+.product-card {
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+
+    &.text-light {
+        .details {
+            color: white;
+        }
+    }
+
+    .details {
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        transform: translateY(-50%);
+
+        h3 {
+            font-weight: 600;
+        }
+
+        a {
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.feature-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+
+    .feature-items {
+        i {
+            font-size: 30px;
+        }
+
+        h2 {
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: $primary-color;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 14px;
+            color: gray;
+        }
+    }
+}
+
+.section-bg {
+    margin-top: 50px;
+    background-color: #EEEEEE;
+    font-weight: 600;
+    color: $primary-color;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 100px 20px;
+
+    .section-title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .a {
+        font-size: 13px;
+        line-height: 22px;
+        align-items: center;
+        position: relative;
+
+        &::before {
+            content: "";
+            height: 2px;
+            width: 40%;
+            color: $primary-color;
+            position: absolute;
+            bottom: -5px;
+            transition: 0.5s;
+
+            &:hover {
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.section-bg {
+    background-color: #EEEEEE;
+    padding: 80px;
+}
+
+.category-slider {
+    .category {
+        text-align: center;
+
+        h3 {
+            margin: 20px auto 0px;
+            text-transform: uppercase;
+            color: $primary-color;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 22px;
+            position: relative;
+            padding-bottom: 5px;
+            width: fit-content;
+
+            &::before {
+                content: "";
+                height: 2px;
+                width: 0%;
+                background-color: $primary-color;
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                transition: 0.4s;
+            }
+
+            &:hover {
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}
+
+.special-offer-section {
+    .grid-wrapper {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+    }
+}
+
+.product-banner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
